@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'infrastructure/services/storage/storage_service.dart';
 import 'infrastructure/services/api/api_service.dart';
 import 'core/theme/theme_service.dart';
-import 'infrastructure/services/translation/translation_service.dart';
+import 'core/translation/translation_service.dart';
 
 class Initializer {
   static Future<void> init() async {

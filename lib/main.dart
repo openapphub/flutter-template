@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 import 'core/theme/app_themes.dart';
 import 'core/theme/theme_service.dart';
-import 'infrastructure/services/translation/translation_service.dart';
+import 'core/translation/translation_service.dart';
 import 'initializer.dart';
 
 void main() async {

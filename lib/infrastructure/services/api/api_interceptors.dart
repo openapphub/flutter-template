@@ -28,7 +28,7 @@ class ApiInterceptors extends dio.Interceptor {
 
   @override
   Future<void> onError(
-      dio.DioError err, dio.ErrorInterceptorHandler handler) async {
+      dio.DioException err, dio.ErrorInterceptorHandler handler) async {
     print(
         'ERROR[${err.response?.statusCode}] => PATH: ${err.requestOptions.path}');
 

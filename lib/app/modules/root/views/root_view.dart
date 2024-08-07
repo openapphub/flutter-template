@@ -13,6 +13,9 @@ class RootView extends GetView<RootController> {
 
   @override
   Widget build(BuildContext context) {
+    // final ThemeData theme = Theme.of(context);
+    final colorScheme = Theme.of(context).colorScheme;
+
     return PersistentTabView(
       context,
       controller: controller.tabController,
@@ -25,25 +28,25 @@ class RootView extends GetView<RootController> {
         PersistentBottomNavBarItem(
           icon: Icon(Icons.home),
           title: ("Home"),
-          activeColorPrimary: Colors.blue,
-          inactiveColorPrimary: Colors.grey,
+          activeColorPrimary: colorScheme.onTertiary,
+          inactiveColorPrimary: colorScheme.onTertiary,
         ),
         PersistentBottomNavBarItem(
           icon: Icon(Icons.search),
           title: ("Search"),
-          activeColorPrimary: Colors.blue,
-          inactiveColorPrimary: Colors.grey,
+          activeColorPrimary: colorScheme.onTertiary,
+          inactiveColorPrimary: colorScheme.onTertiary,
         ),
         PersistentBottomNavBarItem(
           icon: Icon(Icons.person),
           title: ("Profile"),
-          activeColorPrimary: Colors.blue,
-          inactiveColorPrimary: Colors.grey,
+          activeColorPrimary: colorScheme.onTertiary,
+          inactiveColorPrimary: colorScheme.onTertiary,
         ),
       ],
       padding: const EdgeInsets.only(top: 8),
       confineToSafeArea: true,
-      backgroundColor: Colors.white,
+      backgroundColor: colorScheme.primary,
       handleAndroidBackButtonPress: true,
       resizeToAvoidBottomInset: true,
       stateManagement: true,

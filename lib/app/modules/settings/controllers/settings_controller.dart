@@ -1,23 +1,24 @@
+import 'dart:ui';
+
+import 'package:flutter_template/core/translation/translation_service.dart';
 import 'package:get/get.dart';
 
 class SettingsController extends GetxController {
-  //TODO: Implement SettingsController
+  final TranslationService _translationService = Get.find<TranslationService>();
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  void changeLanguage(String languageCode, String? countryCode) {
+    _translationService.changeLocale(languageCode, countryCode);
   }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  String get currentLanguage => _translationService.getCurrentLanguageName();
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
+  List<Locale> get supportedLocales => _translationService.supportedLocales;
 
-  void increment() => count.value++;
+  Locale? get currentLocale {
+    final currentLocale = Get.locale;
+    if (supportedLocales.contains(currentLocale)) {
+      return currentLocale;
+    }
+    return null;
+  }
 }
