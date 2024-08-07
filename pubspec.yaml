@@ -8,7 +8,12 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.6
   get: 4.6.6
+  get_storage: 2.1.1
+  dio: 5.5.0+1
+  persistent_bottom_nav_bar: 6.2.1
   flutter: 
+    sdk: flutter
+  flutter_localizations: 
     sdk: flutter
 
 dev_dependencies: 
