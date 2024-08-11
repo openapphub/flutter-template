@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
-import '../../infrastructure/services/storage/storage_service.dart';
-import '../../infrastructure/services/storage/storage_keys.dart';
+
 import '../../generated/locales.g.dart';
+import '../../infrastructure/services/storage/storage_keys.dart';
+import '../../infrastructure/services/storage/storage_service.dart';
 
 class TranslationService extends Translations {
   late StorageService _storageService;

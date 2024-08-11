@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/app/global_widgets/custom_bottom_nav_item.dart';
-import 'package:flutter_template/app/modules/home/views/home_view.dart';
-import 'package:flutter_template/app/modules/profile/views/profile_view.dart';
-import 'package:flutter_template/app/modules/settings/views/settings_view.dart';
-import 'package:flutter_template/infrastructure/navigation/navigation_controller.dart';
+
 import 'package:get/get.dart';
+
+import '../../../infrastructure/navigation/navigation_controller.dart';
+import '../../global_widgets/custom_bottom_nav_item.dart';
+import '../home/home_view.dart';
+import '../profile/profile_view.dart';
+import '../settings/settings_view.dart';
 
 class MainView extends StatelessWidget {
   final NavigationController controller = Get.put(NavigationController());

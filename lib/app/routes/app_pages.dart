@@ -1,23 +1,24 @@
 import 'package:get/get.dart';
 
-import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
-import '../modules/main/bindings/main_binding.dart';
-import '../modules/main/views/main_view.dart';
-
-import '../modules/profile/bindings/profile_binding.dart';
-import '../modules/profile/views/profile_view.dart';
-import '../modules/root/bindings/root_binding.dart';
-import '../modules/root/views/root_view.dart';
-import '../modules/settings/bindings/settings_binding.dart';
-import '../modules/settings/views/settings_view.dart';
+import '../modules/home/home_binding.dart';
+import '../modules/home/home_view.dart';
+import '../modules/login/login_binding.dart';
+import '../modules/login/login_view.dart';
+import '../modules/main/main_binding.dart';
+import '../modules/main/main_view.dart';
+import '../modules/profile/profile_binding.dart';
+import '../modules/profile/profile_view.dart';
+import '../modules/root/root_binding.dart';
+import '../modules/root/root_view.dart';
+import '../modules/settings/settings_binding.dart';
+import '../modules/settings/settings_view.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.ROOT;
+  static const INITIAL = Routes.LOGIN;
 
   static final routes = [
     GetPage(
@@ -51,6 +52,11 @@ class AppPages {
       name: _Paths.ROOT,
       page: () => const RootView(),
       binding: RootBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN,
+      page: () => const LoginView(),
+      binding: LoginBinding(),
     ),
   ];
 }
