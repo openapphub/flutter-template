@@ -1,12 +1,11 @@
 import 'package:get/get.dart';
 
-import 'package:flutter_template/infrastructure/services/logger/log_service.dart';
-import 'package:flutter_template/infrastructure/services/ui/ui_service.dart';
-
 import 'core/theme/theme_service.dart';
 import 'core/translation/translation_service.dart';
 import 'infrastructure/services/api/api_service.dart';
+import 'infrastructure/services/logger/log_service.dart';
 import 'infrastructure/services/storage/storage_service.dart';
+import 'infrastructure/services/ui/ui_service.dart';
 
 class Initializer {
   static Future<void> init() async {

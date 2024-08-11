@@ -1,9 +1,8 @@
 import 'package:get/get.dart';
 
-import 'package:flutter_template/app/data/model/login_req_model.dart';
-import 'package:flutter_template/infrastructure/services/api/api_endpoints.dart';
-import 'package:flutter_template/infrastructure/services/api/api_service.dart';
-
+import '../../../infrastructure/services/api/api_endpoints.dart';
+import '../../../infrastructure/services/api/api_service.dart';
+import '../model/login_req_model.dart';
 import '../model/login_res_model.dart';
 
 class LoginProvider extends GetxService {

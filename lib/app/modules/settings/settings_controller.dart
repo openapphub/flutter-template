@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:get/get.dart';
 
-import 'package:flutter_template/core/translation/translation_service.dart';
+import '../../../core/translation/translation_service.dart';
 
 class SettingsController extends GetxController {
   final TranslationService _translationService = Get.find<TranslationService>();

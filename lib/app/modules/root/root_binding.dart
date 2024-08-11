@@ -1,8 +1,7 @@
 import 'package:get/get.dart';
 
-import 'package:flutter_template/app/modules/settings/controllers/settings_controller.dart';
-
-import '../controllers/root_controller.dart';
+import '../settings/settings_controller.dart';
+import 'root_controller.dart';
 
 class RootBinding extends Bindings {
   @override

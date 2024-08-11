@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import 'package:flutter_template/app/data/repositories/login_repository.dart';
-import 'package:flutter_template/infrastructure/services/ui/ui_service.dart';
+import '../../../infrastructure/services/ui/ui_service.dart';
+import '../../data/repositories/login_repository.dart';
 
 class LoginController extends GetxController {
   final LoginRepository loginRepository;

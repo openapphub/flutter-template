@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import 'package:flutter_template/core/theme/theme_service.dart';
-import 'package:flutter_template/generated/locales.g.dart';
-
-import '../controllers/settings_controller.dart';
+import '../../../core/theme/theme_service.dart';
+import '../../../generated/locales.g.dart';
+import 'settings_controller.dart';
 
 class SettingsView extends GetView<SettingsController> {
   const SettingsView({super.key});

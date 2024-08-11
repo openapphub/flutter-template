@@ -1,8 +1,7 @@
 import 'package:get/get.dart';
 
-import 'package:flutter_template/infrastructure/navigation/navigation_controller.dart';
-
-import '../controllers/main_controller.dart';
+import '../../../infrastructure/navigation/navigation_controller.dart';
+import 'main_controller.dart';
 
 class MainBinding extends Bindings {
   @override

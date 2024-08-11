@@ -1,8 +1,7 @@
 import 'package:get/get.dart';
 
-import 'package:flutter_template/infrastructure/services/storage/storage_keys.dart';
-import 'package:flutter_template/infrastructure/services/storage/storage_service.dart';
-
+import '../../../infrastructure/services/storage/storage_keys.dart';
+import '../../../infrastructure/services/storage/storage_service.dart';
 import '../model/login_req_model.dart';
 import '../providers/login_provider.dart';
 
