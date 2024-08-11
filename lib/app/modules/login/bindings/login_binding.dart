@@ -1,7 +1,8 @@
+import 'package:get/get.dart';
+
 import 'package:flutter_template/app/data/providers/login_provider.dart';
 import 'package:flutter_template/app/data/repositories/login_repository.dart';
 import 'package:flutter_template/infrastructure/services/api/api_service.dart';
-import 'package:get/get.dart';
 
 import '../controllers/login_controller.dart';
 

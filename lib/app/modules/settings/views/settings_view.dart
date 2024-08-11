@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/core/theme/theme_service.dart';
-import 'package:flutter_template/generated/locales.g.dart';
 
 import 'package:get/get.dart';
+
+import 'package:flutter_template/core/theme/theme_service.dart';
+import 'package:flutter_template/generated/locales.g.dart';
 
 import '../controllers/settings_controller.dart';
 

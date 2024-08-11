@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/app/modules/home/views/home_view.dart';
-import 'package:flutter_template/app/modules/profile/views/profile_view.dart';
-import 'package:flutter_template/app/modules/settings/views/settings_view.dart';
 
 import 'package:get/get.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+
+import 'package:flutter_template/app/modules/home/views/home_view.dart';
+import 'package:flutter_template/app/modules/profile/views/profile_view.dart';
+import 'package:flutter_template/app/modules/settings/views/settings_view.dart';
 
 import '../controllers/root_controller.dart';
 

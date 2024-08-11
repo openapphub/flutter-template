@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_template/infrastructure/services/logger/log_service.dart';
 import 'package:get/get.dart';
+
+import 'package:flutter_template/infrastructure/services/logger/log_service.dart';
+
 import 'app/routes/app_pages.dart';
 import 'core/theme/app_themes.dart';
 import 'core/theme/theme_service.dart';

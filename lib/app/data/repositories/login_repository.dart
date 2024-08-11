@@ -1,10 +1,12 @@
-// app/data/repositories/user_repository.dart
+import 'package:get/get.dart';
 
 import 'package:flutter_template/infrastructure/services/storage/storage_keys.dart';
 import 'package:flutter_template/infrastructure/services/storage/storage_service.dart';
-import 'package:get/get.dart';
-import '../providers/login_provider.dart';
+
 import '../model/login_req_model.dart';
+import '../providers/login_provider.dart';
+
+// app/data/repositories/user_repository.dart
 
 class LoginRepository {
   final LoginProvider _userProvider = Get.find<LoginProvider>();
