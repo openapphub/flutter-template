@@ -1,3 +1,5 @@
+import 'package:flutter_template/infrastructure/services/logger/log_service.dart';
+import 'package:flutter_template/infrastructure/services/ui/ui_service.dart';
 import 'package:get/get.dart';
 import 'infrastructure/services/storage/storage_service.dart';
 import 'infrastructure/services/api/api_service.dart';
@@ -18,5 +20,7 @@ class Initializer {
     await Get.putAsync(() => ApiService().init());
     await Get.putAsync(() => ThemeService().init());
     await Get.putAsync(() => TranslationService().init());
+    await Get.putAsync(() => UIService().init()); // 添加 UIService
+    await Get.putAsync(() => LogService().init());
   }
 }

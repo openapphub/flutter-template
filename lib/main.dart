@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_template/infrastructure/services/logger/log_service.dart';
 import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 import 'core/theme/app_themes.dart';
@@ -13,9 +15,12 @@ void main() async {
 
   final themeService = Get.find<ThemeService>();
   final translationService = Get.find<TranslationService>();
+  final LogService _logService = Get.find<LogService>();
+  _logService.debug('系统初始化成功');
 
   runApp(
     GetMaterialApp(
+      builder: EasyLoading.init(),
       title: "Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,

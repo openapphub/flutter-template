@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "message": "Success",
+  "data": {
+    "userProfile": {
+      "id": 1,
+      "name": "fake name",
+      "email": "fake@example.com",
+      "deletedAt": null
+    },
+    "tokens": {
+      "access": {
+        "token": "ey",
+        "expires": "2024-08-09T15:19:09.007Z"
+      },
+      "refresh": {
+        "token": "eyJ",
+        "expires": "2024-09-08T14:49:09.015Z"
+      }
+    }
+  }
+}

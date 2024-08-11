@@ -1,6 +1,6 @@
 class ApiEndpoints {
   static const String baseUrl =
-      'https://api.example.com/v1'; // Replace with your actual base URL
+      'http://localhost:3000/v1'; // Replace with your actual base URL
   static const String contentType = 'application/json';
   // Auth endpoints
   static const String login = '/auth/login';

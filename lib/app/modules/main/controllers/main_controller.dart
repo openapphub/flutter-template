@@ -11,6 +11,7 @@ class MainController extends GetxController {
 
   @override
   void onReady() {
+    print('123');
     super.onReady();
   }
 
